@@ -33,7 +33,7 @@ void HdDrive::begin(SdSpiConfig config)
 void HdDrive::deactivate()
 {
 #ifdef SDCARD
-  SPI.endTransaction();
+  SPI.endTransaction(); 
 #endif
 }
 
