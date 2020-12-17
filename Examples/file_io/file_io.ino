@@ -5,7 +5,6 @@
  */
 
 #include "CFCard.h"
-#include "HdDriver.h"
 
 HdDriver hdd;
 #define HDCONFIG SdSpiConfig(0, DEDICATED_SPI, 0, &hdd)
