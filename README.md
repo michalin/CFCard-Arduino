@@ -15,3 +15,4 @@ If the [SDFat library V2](https://github.com/greiman/SdFat.git) from Bill Greima
 - Then uncomment "#define USE_FAT" in CFCard.h 
 Most of the functions provided by the SDFat library should work with CF Cards and PATA drives as well.
 See [Examples/file-io](Examples/file_io/file_io.ino)
+- A downside of the SDFat library is however, that that it can only deal with volumes that have a master boot record (MBR). Compact Flash cards formatted with Windows don´t have an MBR, but Windows users need not despair. There is a free tool, called [Rufus](https://rufus.ie) available that can format the drive so that it is accepted by the SdFat lib.   
